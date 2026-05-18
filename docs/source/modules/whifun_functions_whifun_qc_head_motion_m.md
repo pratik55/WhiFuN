@@ -1,14 +1,9 @@
-# Module Name: `whifun_functions/whifun_qc_head_motion.m`
-- **Module Category:** WhiFuN first-party MATLAB function.
-- **Theoretical Background:** Framewise displacement is commonly $FD_t=\sum_{i=1}^{3}|\Delta d_{i,t}|+R\sum_{i=1}^{3}|\Delta\theta_{i,t}|$, with $R=50\,\mathrm{mm}$. Visualization modules use slice sampling, overlays, contours, colormaps, and surface or graph rendering without adding a separate inferential model. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Key Features:**
   - WHIFUN_QC_HEAD_MOTION Generates a quality control figure for head motion. WHIFUN_QC_HEAD_MOTION(out_folder, realigned_func_native, ..., motion_txt) creates a comprehensive quality control report for head motion for a single subject. The report consists of four plots combined into a single figure. The function performs the following steps: 1. **Check Existence**: It checks if a head motion QC image already exists and, based on the `over_write` flag, either skips or generates a new one. 2. **Calculate Metrics**: It reads the realigned functional data and the motion parameter file. It then calcul
   - Internal calls detected: `whifun_create_file`
   - External dependencies detected: MATLAB NIfTI I/O, MATLAB table/file I/O
 
 ## Function: `whifun_qc_head_motion()`
-- **Signature & Definition:** `function whifun_qc_head_motion(out_folder,realigned_func_native,name,max_fd,mean_fd,greater_than_20,over_write,motion_txt)` (line 1)
-- **Scientific Theory & Formulas:** Framewise displacement is commonly $FD_t=\sum_{i=1}^{3}|\Delta d_{i,t}|+R\sum_{i=1}^{3}|\Delta\theta_{i,t}|$, with $R=50\,\mathrm{mm}$. Visualization modules use slice sampling, overlays, contours, colormaps, and surface or graph rendering without adding a separate inferential model. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Functional Purpose:** WHIFUN_QC_HEAD_MOTION Generates a quality control figure for head motion. WHIFUN_QC_HEAD_MOTION(out_folder, realigned_func_native, ..., motion_txt) creates a comprehensive quality control report for head motion for a single subject. The report consists of four plots combined into a single figure. The function performs the following steps: 1. **Check Existence**: It checks if a head motion QC image already exists and, based on the `over_write` flag, either skips or generates a new one. 2. **Calculate Metrics**: It reads the realigned functional data and the motion parameter file. It then calculates: - **Global Mean**: The scaled global signal mean over time. - **Pairwise Variance**: A measure
 - **Arguments:**
   - `out_folder` (character vector or string scalar filesystem path): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
@@ -19,10 +14,3 @@
   - `greater_than_20` (MATLAB value inferred from source usage): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `over_write` (logical or numeric flag): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `motion_txt` (MATLAB value inferred from source usage): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
-- **Returns:**
-  - No explicit return variable; outputs are files, figures, GUI state, console text, or modified structures.
-- **Dependencies:**
-  - Calls: `whifun_create_file`
-  - External: MATLAB NIfTI I/O, MATLAB table/file I/O
-  - Called By: `whifun_functions/whifun_qc.m:1/whifun_qc`
-- **Edge Cases & Exceptions:** Defines defaults or branches for optional arguments or missing files. Checks empty arrays, missing files, or empty user selections.

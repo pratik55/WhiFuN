@@ -1,14 +1,9 @@
-# Module Name: `whifun_functions/whifun_segment_preproc.m`
-- **Module Category:** WhiFuN first-party MATLAB function.
-- **Theoretical Background:** Tissue masks use label or probability thresholding. Group consensus includes voxel $v$ when $S^{-1}\sum_s I_s(v)\ge\tau$. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Key Features:**
   - WHIFUN_SEGMENT_PREPROC Orchestrates SPM-based anatomical segmentation. [Subj_list_1, out_def_path] = WHIFUN_SEGMENT_PREPROC(quality_control_path, ..., over_write) is a high-level function that manages the anatomical segmentation and normalization step using SPM. This function first checks for and resolves any ambiguity in the input anatomical file. It then checks if the core output (the deformation field file, prefixed with 'y_') already exists. Based on the `over_write` flag, it either skips the segmentation or proceeds by calling the `whifun_segment` function. After the segmentation job, the
   - Internal calls detected: `whifun_create_file`, `whifun_multiple_file_found`, `whifun_segment`, `write_error`
   - External dependencies detected: SPM12
 
 ## Function: `whifun_segment_preproc()`
-- **Signature & Definition:** `function [Subj_list_1,out_def_path,GM_native,WM_native,CSF_native,GM_MNI,WM_MNI,CSF_MNI] = whifun_segment_preproc(quality_control_path,Subj_list_1,in_anat_path,log_fileID,over_write)` (line 1)
-- **Scientific Theory & Formulas:** Registration uses affine coordinates $x_{world}=M[x\;1]$ and, for normalization, deformation fields; SPM coregistration uses normalized mutual information for multimodal alignment. Tissue masks use label or probability thresholding. Group consensus includes voxel $v$ when $S^{-1}\sum_s I_s(v)\ge\tau$. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Functional Purpose:** WHIFUN_SEGMENT_PREPROC Orchestrates SPM-based anatomical segmentation. [Subj_list_1, out_def_path] = WHIFUN_SEGMENT_PREPROC(quality_control_path, ..., over_write) is a high-level function that manages the anatomical segmentation and normalization step using SPM. This function first checks for and resolves any ambiguity in the input anatomical file. It then checks if the core output (the deformation field file, prefixed with 'y_') already exists. Based on the `over_write` flag, it either skips the segmentation or proceeds by calling the `whifun_segment` function. After the segmentation job, the function updates the subject structure with the paths to all the generated files, including: - Bias
 - **Arguments:**
   - `quality_control_path` (character vector or string scalar filesystem path): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
@@ -16,17 +11,3 @@
   - `in_anat_path` (character vector or string scalar filesystem path): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `log_fileID` (character vector or string scalar filesystem path): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `over_write` (logical or numeric flag): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
-- **Returns:**
-  - `Subj_list_1` (structure array containing participant metadata and paths): Output produced by the MATLAB implementation.
-  - `out_def_path` (character vector or string scalar filesystem path): Output produced by the MATLAB implementation.
-  - `GM_native` (MATLAB value inferred from source usage): Output produced by the MATLAB implementation.
-  - `WM_native` (MATLAB value inferred from source usage): Output produced by the MATLAB implementation.
-  - `CSF_native` (MATLAB value inferred from source usage): Output produced by the MATLAB implementation.
-  - `GM_MNI` (MATLAB value inferred from source usage): Output produced by the MATLAB implementation.
-  - `WM_MNI` (MATLAB value inferred from source usage): Output produced by the MATLAB implementation.
-  - `CSF_MNI` (MATLAB value inferred from source usage): Output produced by the MATLAB implementation.
-- **Dependencies:**
-  - Calls: `whifun_create_file`, `whifun_multiple_file_found`, `whifun_segment`, `write_error`
-  - External: SPM12
-  - Called By: `whifun_functions/whifun_preproc.m:1/whifun_preproc`
-- **Edge Cases & Exceptions:** Uses try/catch; failures are logged, displayed, or returned. Checks empty arrays, missing files, or empty user selections. Raises MATLAB errors for invalid dimensions, missing files, invalid parameters, or failed commands.
