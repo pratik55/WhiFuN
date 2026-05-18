@@ -1,14 +1,9 @@
-# Module Name: `whifun_functions/whifun_prefixes.m`
-- **Module Category:** WhiFuN first-party MATLAB function.
-- **Theoretical Background:** Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Key Features:**
   - WHIFUN_PREFIXES Defines or retrieves standard prefixes for a preprocessing pipeline. [Cut_pre, ..., Norm_pre] = WHIFUN_PREFIXES() returns the default prefixes used to label files after each preprocessing step. [Cut_pre, ..., Norm_pre] = WHIFUN_PREFIXES(Cut_pre, ..., Norm_pre) allows the user to override the default prefixes. This is useful for customizing the file naming convention. This function serves as a central point for managing the consistent naming of output files throughout a neuroimaging preprocessing workflow. If no input arguments are provided, it initializes all prefixes to their 
   - Internal calls detected: No internal WhiFuN calls detected.
   - External dependencies detected: No major external dependency pattern detected beyond MATLAB base language.
 
 ## Function: `whifun_prefixes()`
-- **Signature & Definition:** `function [Cut_pre,Realign_pre,skull_pre,Reg_pre,f_pre,Smooth_pre,Norm_pre] = whifun_prefixes(Cut_pre,Realign_pre,skull_pre,Reg_pre,f_pre,Smooth_pre,Norm_pre)` (line 1)
-- **Scientific Theory & Formulas:** Framewise displacement is commonly $FD_t=\sum_{i=1}^{3}|\Delta d_{i,t}|+R\sum_{i=1}^{3}|\Delta\theta_{i,t}|$, with $R=50\,\mathrm{mm}$. Gaussian smoothing uses $G_\sigma(x)=\frac{1}{(2\pi\sigma^2)^{3/2}}e^{-\lVert x\rVert^2/(2\sigma^2)}$ and $\sigma=\mathrm{FWHM}/(2\sqrt{2\ln2})$. Tissue masks use label or probability thresholding. Group consensus includes voxel $v$ when $S^{-1}\sum_s I_s(v)\ge\tau$. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Functional Purpose:** WHIFUN_PREFIXES Defines or retrieves standard prefixes for a preprocessing pipeline. [Cut_pre, ..., Norm_pre] = WHIFUN_PREFIXES() returns the default prefixes used to label files after each preprocessing step. [Cut_pre, ..., Norm_pre] = WHIFUN_PREFIXES(Cut_pre, ..., Norm_pre) allows the user to override the default prefixes. This is useful for customizing the file naming convention. This function serves as a central point for managing the consistent naming of output files throughout a neuroimaging preprocessing workflow. If no input arguments are provided, it initializes all prefixes to their default values. Output Arguments: Cut_pre - Prefix for the file after discarding initial volumes ('c
 - **Arguments:**
   - `Cut_pre` (character vector, string scalar, or categorical option): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
@@ -18,16 +13,3 @@
   - `f_pre` (character vector, string scalar, or categorical option): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `Smooth_pre` (logical or numeric flag): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `Norm_pre` (character vector, string scalar, or categorical option): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
-- **Returns:**
-  - `Cut_pre` (character vector, string scalar, or categorical option): Output produced by the MATLAB implementation.
-  - `Realign_pre` (character vector, string scalar, or categorical option): Output produced by the MATLAB implementation.
-  - `skull_pre` (character vector, string scalar, or categorical option): Output produced by the MATLAB implementation.
-  - `Reg_pre` (logical or numeric flag): Output produced by the MATLAB implementation.
-  - `f_pre` (character vector, string scalar, or categorical option): Output produced by the MATLAB implementation.
-  - `Smooth_pre` (logical or numeric flag): Output produced by the MATLAB implementation.
-  - `Norm_pre` (character vector, string scalar, or categorical option): Output produced by the MATLAB implementation.
-- **Dependencies:**
-  - Calls: No internal WhiFuN calls detected in this function body.
-  - External: No major external dependency pattern detected beyond MATLAB base language.
-  - Called By: No internal caller detected by static scan; entry point, callback, script-local function, or externally invoked routine.
-- **Edge Cases & Exceptions:** Defines defaults or branches for optional arguments or missing files.

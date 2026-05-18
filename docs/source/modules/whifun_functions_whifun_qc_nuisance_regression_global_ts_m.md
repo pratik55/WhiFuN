@@ -1,14 +1,9 @@
-# Module Name: `whifun_functions/whifun_qc_nuisance_regression_global_ts.m`
-- **Module Category:** WhiFuN first-party MATLAB function.
-- **Theoretical Background:** Linear models use $y=X\beta+\varepsilon$; residualized data are $\hat{\varepsilon}=y-X\hat{\beta}$, with temporal means often added back. Framewise displacement is commonly $FD_t=\sum_{i=1}^{3}|\Delta d_{i,t}|+R\sum_{i=1}^{3}|\Delta\theta_{i,t}|$, with $R=50\,\mathrm{mm}$. Visualization modules use slice sampling, overlays, contours, colormaps, and surface or graph rendering without adding a separate inferential model.
 - **Key Features:**
   - WHIFUN_QC_NUISANCE_REGRESSION_GLOBAL_TS Generates a global time series QC plot for nuisance regression. WHIFUN_QC_NUISANCE_REGRESSION_GLOBAL_TS(...) creates a visual quality control report to assess the effect of nuisance regression on the mean global signal of a functional scan. The function performs the following steps: 1. **Check Existence**: It checks if the output plot already exists and, based on the `over_write` flag, either skips or generates a new one. 2. **Data Loading**: It reads the functional data before and after nuisance regression. It also loads the motion parameters and the CS
   - Internal calls detected: `whifun_create_file`, `whifun_niftiread`
   - External dependencies detected: MATLAB NIfTI I/O, MATLAB table/file I/O, Statistics and Machine Learning Toolbox
 
 ## Function: `whifun_qc_nuisance_regression_global_ts()`
-- **Signature & Definition:** `function whifun_qc_nuisance_regression_global_ts(out_folder,Subj_list_1,REG_CSF,motion_reg,pca_for_temp_reg,over_write,n_pca)` (line 1)
-- **Scientific Theory & Formulas:** Linear models use $y=X\beta+\varepsilon$; residualized data are $\hat{\varepsilon}=y-X\hat{\beta}$, with temporal means often added back. Framewise displacement is commonly $FD_t=\sum_{i=1}^{3}|\Delta d_{i,t}|+R\sum_{i=1}^{3}|\Delta\theta_{i,t}|$, with $R=50\,\mathrm{mm}$. Visualization modules use slice sampling, overlays, contours, colormaps, and surface or graph rendering without adding a separate inferential model.
 - **Functional Purpose:** WHIFUN_QC_NUISANCE_REGRESSION_GLOBAL_TS Generates a global time series QC plot for nuisance regression. WHIFUN_QC_NUISANCE_REGRESSION_GLOBAL_TS(...) creates a visual quality control report to assess the effect of nuisance regression on the mean global signal of a functional scan. The function performs the following steps: 1. **Check Existence**: It checks if the output plot already exists and, based on the `over_write` flag, either skips or generates a new one. 2. **Data Loading**: It reads the functional data before and after nuisance regression. It also loads the motion parameters and the CSF covariates (either PCA components or the mean time series). 3. **Plotting**: It creates a single p
 - **Arguments:**
   - `out_folder` (character vector or string scalar filesystem path): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
@@ -18,10 +13,3 @@
   - `pca_for_temp_reg` (logical or numeric flag): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `over_write` (logical or numeric flag): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `n_pca` (numeric scalar or numeric vector): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
-- **Returns:**
-  - No explicit return variable; outputs are files, figures, GUI state, console text, or modified structures.
-- **Dependencies:**
-  - Calls: `whifun_create_file`, `whifun_niftiread`
-  - External: MATLAB NIfTI I/O, MATLAB table/file I/O, Statistics and Machine Learning Toolbox
-  - Called By: `whifun_functions/whifun_qc.m:1/whifun_qc`
-- **Edge Cases & Exceptions:** Defines defaults or branches for optional arguments or missing files. Checks empty arrays, missing files, or empty user selections. Emits warnings for recoverable conditions.

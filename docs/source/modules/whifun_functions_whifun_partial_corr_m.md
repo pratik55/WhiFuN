@@ -1,14 +1,9 @@
-# Module Name: `whifun_functions/whifun_partial_corr.m`
-- **Module Category:** WhiFuN first-party MATLAB function.
-- **Theoretical Background:** Pearson FC is $r_{ij}=\frac{\sum_t (x_i(t)-\bar{x}_i)(x_j(t)-\bar{x}_j)}{\sqrt{\sum_t (x_i(t)-\bar{x}_i)^2}\sqrt{\sum_t (x_j(t)-\bar{x}_j)^2}}$; upper-triangle vectorization has length $R(R-1)/2$. Fisher transformation uses $z=\operatorname{atanh}(r)=\frac{1}{2}\ln\frac{1+r}{1-r}$. Partial correlation removes covariates $Z$: $r_{xy\cdot Z}=\frac{r_{xy}-r_{xZ}R_{ZZ}^{-1}r_{Zy}}{\sqrt{(1-r_{xZ}R_{ZZ}^{-1}r_{Zx})(1-r_{yZ}R_{ZZ}^{-1}r_{Zy})}}$. Linear models use $y=X\beta+\varepsilon$; residualized data are $\hat{\varepsilon}=y-X\hat{\beta}$, with temporal means often added back. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Key Features:**
   - WHIFUN_PARTIAL_CORR Computes the partial correlation between the time series of voxels in a target mask and the average time series of a set of functional networks (FNs), controlling for all other FNs. PCOR_TS_PATH = WHIFUN_PARTIAL_CORR(WM_OR_GM, MASK_SUBJ_TS_FOLDER, AVG_TS_PATH, FR_MASK_PATH, SUBJ_LIST, K, OVER_WRITE, D_FLAG, D, STEPS, TOT_STEPS) This function calculates the individual-level partial correlation maps (Fisher-z transformed) between every voxel's time series in the target `fr_mask` and each of the K functional networks (WM-FN or GM-FN), while regressing out the influence of the 
   - Internal calls detected: `whifun_create_file`
   - External dependencies detected: MATLAB NIfTI I/O, MATLAB table/file I/O, Statistics and Machine Learning Toolbox, ANTs command-line suite
 
 ## Function: `whifun_partial_corr()`
-- **Signature & Definition:** `function pcor_ts_path = whifun_partial_corr(WM_or_GM,mask_subj_ts_folder,avg_ts_path,fr_mask_path,Subj_list,K,over_write,d_flag,d,steps,tot_steps)` (line 1)
-- **Scientific Theory & Formulas:** Pearson FC is $r_{ij}=\frac{\sum_t (x_i(t)-\bar{x}_i)(x_j(t)-\bar{x}_j)}{\sqrt{\sum_t (x_i(t)-\bar{x}_i)^2}\sqrt{\sum_t (x_j(t)-\bar{x}_j)^2}}$; upper-triangle vectorization has length $R(R-1)/2$. Fisher transformation uses $z=\operatorname{atanh}(r)=\frac{1}{2}\ln\frac{1+r}{1-r}$. Partial correlation removes covariates $Z$: $r_{xy\cdot Z}=\frac{r_{xy}-r_{xZ}R_{ZZ}^{-1}r_{Zy}}{\sqrt{(1-r_{xZ}R_{ZZ}^{-1}r_{Zx})(1-r_{yZ}R_{ZZ}^{-1}r_{Zy})}}$. Linear models use $y=X\beta+\varepsilon$; residualized data are $\hat{\varepsilon}=y-X\hat{\beta}$, with temporal means often added back. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Functional Purpose:** WHIFUN_PARTIAL_CORR Computes the partial correlation between the time series of voxels in a target mask and the average time series of a set of functional networks (FNs), controlling for all other FNs. PCOR_TS_PATH = WHIFUN_PARTIAL_CORR(WM_OR_GM, MASK_SUBJ_TS_FOLDER, AVG_TS_PATH, FR_MASK_PATH, SUBJ_LIST, K, OVER_WRITE, D_FLAG, D, STEPS, TOT_STEPS) This function calculates the individual-level partial correlation maps (Fisher-z transformed) between every voxel's time series in the target `fr_mask` and each of the K functional networks (WM-FN or GM-FN), while regressing out the influence of the other K-1 networks. Input Arguments: WM_OR_GM - String indicating the network type (e.g., 'WM' or 'G
 - **Arguments:**
   - `WM_or_GM` (character vector, string scalar, or categorical option): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
@@ -22,10 +17,3 @@
   - `d` (numeric scalar or numeric vector): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `steps` (MATLAB value inferred from source usage): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `tot_steps` (MATLAB value inferred from source usage): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
-- **Returns:**
-  - `pcor_ts_path` (character vector or string scalar filesystem path): Output produced by the MATLAB implementation.
-- **Dependencies:**
-  - Calls: `whifun_create_file`
-  - External: MATLAB NIfTI I/O, MATLAB table/file I/O, Statistics and Machine Learning Toolbox, ANTs command-line suite
-  - Called By: `whifun_functions/whifun_create_FN_Kmeans.m:1/whifun_create_FN_Kmeans`
-- **Edge Cases & Exceptions:** Defines defaults or branches for optional arguments or missing files. Handles NaN, Inf, or finite-value filtering. Checks empty arrays, missing files, or empty user selections.

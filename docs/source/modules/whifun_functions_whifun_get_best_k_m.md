@@ -1,14 +1,9 @@
-# Module Name: `whifun_functions/whifun_get_best_k.m`
-- **Module Category:** WhiFuN first-party MATLAB function.
-- **Theoretical Background:** K-means minimizes $\sum_i \lVert x_i-\mu_{c_i}\rVert_d^2$; WhiFuN uses correlation-distance voxel-connectivity features for FN maps. Overlap and stability use Dice $D(A,B)=\frac{2|A\cap B|}{|A|+|B|}$ and IoU $J(A,B)=\frac{|A\cap B|}{|A\cup B|}$. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Key Features:**
   - WHIFUN_GET_BEST_K Performs cross-validation stability analysis to determine the optimal number of clusters (K). [K, DICE_COEF, ELB] = WHIFUN_GET_BEST_K(OUT_PATH, AVG_VOX_LEVEL_FC, K_RANGE_L, K_RANGE_H, CV_FOLDS, NUM_REPLICATES, SIZE_CHUNK, ...) This function implements a feature-based cross-validation strategy to measure the stability of k-means clustering solutions for a range of K values. Stability is calculated using the average maximum Dice similarity coefficient between the clustering solutions obtained from different subsets (folds) of the input feature matrix. The principle is based on 
   - Internal calls detected: `whifun_plot_dice_coef_and_elb`
   - External dependencies detected: MATLAB table/file I/O, Statistics and Machine Learning Toolbox
 
 ## Function: `whifun_get_best_k()`
-- **Signature & Definition:** `function K = whifun_get_best_k(out_path,avg_vox_level_FC,K_range_l,K_range_h,CV_folds,num_replicates,size_chunk,d_flag,d,steps_,tot_steps)` (line 1)
-- **Scientific Theory & Formulas:** K-means minimizes $\sum_i \lVert x_i-\mu_{c_i}\rVert_d^2$; WhiFuN uses correlation-distance voxel-connectivity features for FN maps. Overlap and stability use Dice $D(A,B)=\frac{2|A\cap B|}{|A|+|B|}$ and IoU $J(A,B)=\frac{|A\cap B|}{|A\cup B|}$. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Functional Purpose:** WHIFUN_GET_BEST_K Performs cross-validation stability analysis to determine the optimal number of clusters (K). [K, DICE_COEF, ELB] = WHIFUN_GET_BEST_K(OUT_PATH, AVG_VOX_LEVEL_FC, K_RANGE_L, K_RANGE_H, CV_FOLDS, NUM_REPLICATES, SIZE_CHUNK, ...) This function implements a feature-based cross-validation strategy to measure the stability of k-means clustering solutions for a range of K values. Stability is calculated using the average maximum Dice similarity coefficient between the clustering solutions obtained from different subsets (folds) of the input feature matrix. The principle is based on the idea that a clustering solution for the optimal K will be highly consistent (stable) even when t
 - **Arguments:**
   - `out_path` (character vector or string scalar filesystem path): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
@@ -22,10 +17,3 @@
   - `d` (numeric scalar or numeric vector): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `steps_` (MATLAB value inferred from source usage): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `tot_steps` (MATLAB value inferred from source usage): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
-- **Returns:**
-  - `K` (numeric scalar or numeric vector): Output produced by the MATLAB implementation.
-- **Dependencies:**
-  - Calls: `whifun_plot_dice_coef_and_elb`
-  - External: MATLAB table/file I/O, Statistics and Machine Learning Toolbox
-  - Called By: `whifun_functions/whifun_create_FN_Kmeans.m:1/whifun_create_FN_Kmeans`, `whifun_functions/whifun_create_FN_Kmeans_WM_GM.m:1/whifun_create_FN_Kmeans_WM_GM`
-- **Edge Cases & Exceptions:** Defines defaults or branches for optional arguments or missing files. Raises MATLAB errors for invalid dimensions, missing files, invalid parameters, or failed commands. May pause for interactive user input, which affects batch reproducibility.

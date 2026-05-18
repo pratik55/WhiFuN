@@ -1,14 +1,9 @@
-# Module Name: `whifun_functions/whifun_create_avg_ts.m`
-- **Module Category:** WhiFuN first-party MATLAB function.
-- **Theoretical Background:** Band-pass filtering uses Butterworth IIR coefficients; forward-backward `filtfilt` cancels phase delay and squares the magnitude response. Visualization modules use slice sampling, overlays, contours, colormaps, and surface or graph rendering without adding a separate inferential model. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Key Features:**
   - WHIFUN_GET_AVG_TS Extracts the average time series for each region in a given ROI atlas. AVG_TS_PATH = WHIFUN_GET_AVG_TS(OUT_FOLDER, ROI_PATH, SUBJ_LIST, FIELD, BAND_INFO, QC_PLOTS, OVER_WRITE, D_FLAG, D, STEPS_, TOT_STEPS) This function reads functional MRI data for a list of subjects, resamples the specified Atlas (ROI), and extracts the mean BOLD time series for every non-zero region defined in the Atlas. It also handles optional bandpass filtering and checks for regions with missing functional data. Input Arguments: OUT_FOLDER - Main output directory for saving results and QC plots. ROI_PA
   - Internal calls detected: `functional_connectivity`, `niftisave`, `whifun_create_file`, `whifun_niftiread`
   - External dependencies detected: MATLAB NIfTI I/O, MATLAB table/file I/O, Signal Processing Toolbox, SPM12, ANTs command-line suite
 
 ## Function: `whifun_create_avg_ts()`
-- **Signature & Definition:** `function [avg_ts_path,Subj_list] = whifun_create_avg_ts(out_folder,ROI_path,Subj_list,field,band_info,QC_plots,over_write,d_flag,d,steps_,tot_steps)` (line 1)
-- **Scientific Theory & Formulas:** Band-pass filtering uses Butterworth IIR coefficients; forward-backward `filtfilt` cancels phase delay and squares the magnitude response. Visualization modules use slice sampling, overlays, contours, colormaps, and surface or graph rendering without adding a separate inferential model. Data-management code preserves participant provenance, BIDS/custom path mapping, and reproducible bookkeeping.
 - **Functional Purpose:** WHIFUN_GET_AVG_TS Extracts the average time series for each region in a given ROI atlas. AVG_TS_PATH = WHIFUN_GET_AVG_TS(OUT_FOLDER, ROI_PATH, SUBJ_LIST, FIELD, BAND_INFO, QC_PLOTS, OVER_WRITE, D_FLAG, D, STEPS_, TOT_STEPS) This function reads functional MRI data for a list of subjects, resamples the specified Atlas (ROI), and extracts the mean BOLD time series for every non-zero region defined in the Atlas. It also handles optional bandpass filtering and checks for regions with missing functional data. Input Arguments: OUT_FOLDER - Main output directory for saving results and QC plots. ROI_PATH - Full path to the NIfTI file defining the ROI atlas. SUBJ_LIST - (can be created with whifun_cre
 - **Arguments:**
   - `out_folder` (character vector or string scalar filesystem path): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
@@ -22,11 +17,3 @@
   - `d` (numeric scalar or numeric vector): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `steps_` (MATLAB value inferred from source usage): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
   - `tot_steps` (MATLAB value inferred from source usage): Inferred from the signature, variable name, and source usage; precise validation occurs at MATLAB runtime.
-- **Returns:**
-  - `avg_ts_path` (character vector or string scalar filesystem path): Output produced by the MATLAB implementation.
-  - `Subj_list` (structure array containing participant metadata and paths): Output produced by the MATLAB implementation.
-- **Dependencies:**
-  - Calls: `functional_connectivity`, `niftisave`, `whifun_create_file`, `whifun_niftiread`
-  - External: MATLAB NIfTI I/O, MATLAB table/file I/O, Signal Processing Toolbox, SPM12, ANTs command-line suite
-  - Called By: `main.mlapp:1538/ExtractROITImeseriesButtonPushed`, `whifun_functions/whifun_create_FN_Kmeans.m:1/whifun_create_FN_Kmeans`, `whifun_functions/whifun_create_FN_Kmeans_WM_GM.m:1/whifun_create_FN_Kmeans_WM_GM`
-- **Edge Cases & Exceptions:** Defines defaults or branches for optional arguments or missing files. Handles NaN, Inf, or finite-value filtering. Checks empty arrays, missing files, or empty user selections. Raises MATLAB errors for invalid dimensions, missing files, invalid parameters, or failed commands.
