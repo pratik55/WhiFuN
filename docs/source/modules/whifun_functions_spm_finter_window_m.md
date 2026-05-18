@@ -1,4 +1,0 @@
-- **Key Features:**
-  - No leading help block was present; behavior was inferred from signatures and static calls.
-  - Internal calls detected: No internal WhiFuN calls detected.
-  - External dependencies detected: SPM12
