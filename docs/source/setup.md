@@ -38,7 +38,7 @@
 
 2.  The anatomical and the functional folder should be in the same folder.
 
-> WhiFuN won’t be able to process any dataset that deviates from the above-mentioned format.
+> WhiFuN won’t be able to process any dataset that deviates from the above-mentioned format wintin the GUI. However with Script it is possible.
 >
 > We explain how the deviations from BIDS can be handled by WhiFuN using an example of practice [ABIDE](https://fcon_1000.projects.nitrc.org/indi/abide/) dataset that can be downloaded from [here](https://drive.google.com/drive/folders/1l7dhG8dYYRCW5EWhkPZbBpA7TOau1W-B). It has the following folder structure
 >
