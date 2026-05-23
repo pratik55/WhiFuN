@@ -42,35 +42,33 @@
 >
 > We explain how the deviations from BIDS can be handled by WhiFuN using an example of practice [ABIDE](https://fcon_1000.projects.nitrc.org/indi/abide/) dataset that can be downloaded from [here](https://drive.google.com/drive/folders/1l7dhG8dYYRCW5EWhkPZbBpA7TOau1W-B). It has the following folder structure
 >
-> Example Data format 1:
->
-## Example
-
+## Example Data format 1:
 ```md
-├── 0050952
-│   └── session_1
-│       ├── anat_1
-│       │   └── mprage.nii.gz
-│       └── rest_1
-│           └── rest.nii.gz
-├── 0050953
-│   └── session_1
-│       ├── anat_1
-│       │   └── mprage.nii.gz
-│       └── rest_1
-│           └── rest.nii.gz
-├── 0050954
-│   └── session_1
-│       ├── anat_1
-│       │   └── mprage.nii.gz
-│       └── rest_1
-│           └── rest.nii.gz
-└── 0050955
-    └── session_1
-        ├── anat_1
-        │   └── mprage.nii.gz
-        └── rest_1
-            └── rest.nii.gz
+├── practice_NYU_abide                  (Participants Data folder)
+│   ├── 0050952                         (Specific Participant’s Folder)
+│   │   └── session_1                   (Intermediate folder)
+│   │       ├── anat_1                  (Anatomical folder)
+│   │       │   └── mprage.nii.gz    
+│   │       └── rest_1                  (Functional folder)
+│   │           └── rest.nii.gz
+│   ├── 0050953
+│   │   └── session_1
+│   │       ├── anat_1
+│   │       │   └── mprage.nii.gz
+│   │       └── rest_1
+│   │           └── rest.nii.gz
+│   ├── 0050954
+│   │   └── session_1
+│   │       ├── anat_1
+│   │       │   └── mprage.nii.gz
+│   │       └── rest_1
+│   │           └── rest.nii.gz
+│   └── 0050955
+│       └── session_1
+│           ├── anat_1
+│           │   └── mprage.nii.gz
+│           └── rest_1
+│               └── rest.nii.gz
 ```
 >
 > practice_nyu_abide Participants Data folder
