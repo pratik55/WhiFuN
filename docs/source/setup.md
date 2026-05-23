@@ -45,12 +45,12 @@
 > Example Data format 1:
 >
 text.
-├── src/
-│   ├── main.js
-│   └── styles.css
-├── public/
-│   └── index.html
-└── package.json
+├── src \
+│   ├── main.js \
+│   └── styles.css \
+├── public \
+│   └── index.html \
+└── package.json \
 >
 > practice_nyu_abide Participants Data folder
 >
