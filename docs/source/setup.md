@@ -44,7 +44,6 @@
 >
 > Example Data format 1:
 >
-text.
 ├── src \
 │   ├── main.js \
 │   └── styles.css \
