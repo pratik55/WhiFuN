@@ -1,4 +1,0 @@
-- **Key Features:**
-  - % in figure
-  - Internal calls detected: No internal WhiFuN calls detected.
-  - External dependencies detected: No major external dependency pattern detected beyond MATLAB base language.

@@ -1,4 +1,0 @@
-- **Key Features:**
-  - % This code written by Pratik Jain. % This code was written with the help of different preprocessing scripts given by % Dr. Xin Di, Dr. Rakibul Hafeez, Dr. Wang Pan, Donna Chen and Wonbum Sohn % Under guidance of Dr Andrew Micheal and Dr. Bharat Biswal. Make sure you have run the Initial Data check script before running this % Defining Important paths and Creating Output whifun_directories
-  - Internal calls detected: No internal WhiFuN calls detected.
-  - External dependencies detected: MATLAB table/file I/O

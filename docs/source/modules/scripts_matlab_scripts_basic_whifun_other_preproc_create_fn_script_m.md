@@ -1,4 +1,0 @@
-- **Key Features:**
-  - % Addpaths if not already added
-  - Internal calls detected: No internal WhiFuN calls detected.
-  - External dependencies detected: MATLAB table/file I/O, SPM12

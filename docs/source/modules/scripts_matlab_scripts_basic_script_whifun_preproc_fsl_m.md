@@ -1,4 +1,0 @@
-- **Key Features:**
-  - send(dq, 1);
-  - Internal calls detected: No internal WhiFuN calls detected.
-  - External dependencies detected: Parallel Computing Toolbox, SPM12
