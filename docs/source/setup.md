@@ -44,13 +44,27 @@
 >
 > Example Data format 1:
 >
-.
-└── SE000001
-    ├── MR000000
-    ├── MR000001
-    ├── MR000002
-    └── MR000003
+## Example
 
+```md
+packages/button
+├── lib
+│   ├── button.d.ts
+│   ├── button.js
+│   ├── button.js.map
+│   ├── button.stories.d.ts
+│   ├── button.stories.js
+│   ├── button.stories.js.map
+│   ├── index.d.ts
+│   ├── index.js
+│   └── index.js.map
+├── package.json
+├── src
+│   ├── button.stories.tsx
+│   ├── button.tsx
+│   └── index.ts
+└── tsconfig.json
+```
 >
 > practice_nyu_abide Participants Data folder
 >
