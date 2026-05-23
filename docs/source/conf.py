@@ -18,7 +18,6 @@ extensions = [
     "sphinx.ext.doctest",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
-    "sphinx.ext.intersphinx",
 ]
 
 source_suffix = {
@@ -32,11 +31,8 @@ myst_enable_extensions = [
     "colon_fence",
 ]
 
-intersphinx_mapping = {
-    "python": ("https://docs.python.org/3/", None),
-    "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
-}
-intersphinx_disabled_domains = ["std"]
+myst_heading_anchors = 4
+
 
 templates_path = ["_templates"]
 exclude_patterns = [
@@ -50,12 +46,15 @@ exclude_patterns = [
     "scripting.rst",
     "setup.rst",
     "visualization.rst",
+    "architecture.md",
+    "anomalies.md",
 ]
 
 # -- Options for HTML output
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
+html_css_files = ["custom.css"]
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"

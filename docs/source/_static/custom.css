@@ -1,0 +1,26 @@
+/* Manual images come from the Word document; keep them readable on RTD. */
+.wy-nav-content {
+  max-width: 1120px;
+}
+
+.rst-content img,
+.rst-content figure img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.rst-content figure,
+.rst-content table {
+  margin-bottom: 1.25rem;
+}
+
+.rst-content blockquote {
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: 3px solid #d9e2ec;
+}
+
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+  white-space: normal;
+}
