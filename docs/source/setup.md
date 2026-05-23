@@ -47,23 +47,30 @@
 ## Example
 
 ```md
-packages/button
-├── lib
-│   ├── button.d.ts
-│   ├── button.js
-│   ├── button.js.map
-│   ├── button.stories.d.ts
-│   ├── button.stories.js
-│   ├── button.stories.js.map
-│   ├── index.d.ts
-│   ├── index.js
-│   └── index.js.map
-├── package.json
-├── src
-│   ├── button.stories.tsx
-│   ├── button.tsx
-│   └── index.ts
-└── tsconfig.json
+├── 0050952
+│   └── session_1
+│       ├── anat_1
+│       │   └── mprage.nii.gz
+│       └── rest_1
+│           └── rest.nii.gz
+├── 0050953
+│   └── session_1
+│       ├── anat_1
+│       │   └── mprage.nii.gz
+│       └── rest_1
+│           └── rest.nii.gz
+├── 0050954
+│   └── session_1
+│       ├── anat_1
+│       │   └── mprage.nii.gz
+│       └── rest_1
+│           └── rest.nii.gz
+└── 0050955
+    └── session_1
+        ├── anat_1
+        │   └── mprage.nii.gz
+        └── rest_1
+            └── rest.nii.gz
 ```
 >
 > practice_nyu_abide Participants Data folder
