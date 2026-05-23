@@ -1,6 +1,8 @@
 # whifun_qc
 
-Source: `whifun_functions/whifun_qc.m:1`
+**Source:** `whifun_functions/whifun_qc.m:1`
+
+## Signature
 
 ```matlab
 function whifun_qc(quality_control_path, Subj_list_1, varargin)

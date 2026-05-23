@@ -1,6 +1,8 @@
 # whifun_create_qc
 
-Source: `whifun_functions/whifun_create_qc.m:1`
+**Source:** `whifun_functions/whifun_create_qc.m:1`
+
+## Signature
 
 ```matlab
 function Subj_list = whifun_create_qc

@@ -1,6 +1,8 @@
 # whifun_reslice_data
 
-Source: `whifun_functions/whifun_reslice_data.m:1`
+**Source:** `whifun_functions/whifun_reslice_data.m:1`
+
+## Signature
 
 ```matlab
 function whifun_reslice_data(InputFile,TargetSpace,out_path,interpo)

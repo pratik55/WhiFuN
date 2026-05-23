@@ -1,9 +1,11 @@
 # updateViews
 
-Source: `whifun_functions/whifun_view.m:236`
+**Source:** `whifun_functions/whifun_view.m:236`
+
+## Signature
 
 ```matlab
-    function updateViews(h)
+function updateViews(h)
 ```
 
 ## MATLAB Help

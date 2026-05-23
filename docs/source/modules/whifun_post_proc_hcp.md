@@ -1,6 +1,8 @@
 # whifun_post_proc_hcp
 
-Source: `whifun_functions/whifun_post_proc_hcp.m:1`
+**Source:** `whifun_functions/whifun_post_proc_hcp.m:1`
+
+## Signature
 
 ```matlab
 function Subj_list_1 = whifun_post_proc_hcp(quality_control_path, Subj_list_1, varargin)

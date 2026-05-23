@@ -1,38 +1,41 @@
 # get_symettry_indi
 
-Source: `whifun_functions/get_symettry_indi.m:1`
+**Source:** `whifun_functions/get_symettry_indi.m:1`
+
+## Signature
 
 ```matlab
 function Dice_coef_LR = get_symettry_indi(current_clustering_solution)
 ```
 
-## MATLAB Help
+## Summary
 
 GET_SYMETTRY_INDI Measures the spatial symmetry of a functional network
-  clustering solution using the Dice similarity coefficient, leveraging an
-  external `dice_iou` function.
 
-  DICE_COEF_LR = GET_SYMETTRY_INDI(CURRENT_CLUSTERING_SOLUTION)
+## Syntax
 
-  This function quantifies the degree of mirror-symmetry for a single
-  clustering solution across the mid-sagittal plane. It compares the
-  network labels in the Left hemisphere with the mirrored network labels
-  from the Right hemisphere using the Dice coefficient.
+```matlab
+DICE_COEF_LR = GET_SYMETTRY_INDI(CURRENT_CLUSTERING_SOLUTION)
+```
 
-  Input Arguments:
-  CURRENT_CLUSTERING_SOLUTION - A 3D NIfTI volume (X x Y x Z) where each
-                                non-zero voxel contains a cluster/network
-                                label (K).
+## Description
 
-  Output Arguments:
-  DICE_COEF_LR                - The Dice similarity coefficient matrix (K x K),
-                                where entry (i, j) represents the similarity
-                                between network 'i' in the Left hemisphere (FN_L)
-                                and network 'j' in the mirrored Right hemisphere (FN_R).
+clustering solution using the Dice similarity coefficient, leveraging an external `dice_iou` function.
 
-  Assumptions:
-  - The first dimension (Dim 1) corresponds to the Left-Right axis.
-  - The external function `dice_iou` is available and correctly computes
-    the Dice similarity matrix between two labeled volumes.
+This function quantifies the degree of mirror-symmetry for a single clustering solution across the mid-sagittal plane. It compares the network labels in the Left hemisphere with the mirrored network labels from the Right hemisphere using the Dice coefficient.
 
-  Author: Pratik Jain
+## Input Arguments
+
+### `CURRENT_CLUSTERING_SOLUTION`
+A 3D NIfTI volume (X x Y x Z) where each non-zero voxel contains a cluster/network label (K).
+
+## Output Arguments
+
+### `DICE_COEF_LR`
+The Dice similarity coefficient matrix (K x K), where entry (i, j) represents the similarity between network 'i' in the Left hemisphere (FN_L) and network 'j' in the mirrored Right hemisphere (FN_R). Assumptions:
+- The first dimension (Dim 1) corresponds to the Left-Right axis.
+- The external function `dice_iou` is available and correctly computes the Dice similarity matrix between two labeled volumes.
+
+## Author
+
+Author: Pratik Jain

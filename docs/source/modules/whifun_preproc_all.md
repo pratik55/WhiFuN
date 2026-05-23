@@ -1,6 +1,8 @@
 # whifun_preproc_all
 
-Source: `whifun_functions/whifun_preproc_all.m:1`
+**Source:** `whifun_functions/whifun_preproc_all.m:1`
+
+## Signature
 
 ```matlab
 function whifun_preproc_all(output_folder,varargin)

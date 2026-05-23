@@ -1,6 +1,8 @@
 # write_error_preproc
 
-Source: `whifun_functions/write_error_preproc.m:1`
+**Source:** `whifun_functions/write_error_preproc.m:1`
+
+## Signature
 
 ```matlab
 function Subj_list_all = write_error_preproc(exception,quality_control_path,Subj_list_subji,Subj_list_all,output_folder)

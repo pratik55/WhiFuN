@@ -1,6 +1,8 @@
 # get_mean_std
 
-Source: `whifun_functions/barplot_with_errorbars.m:129`
+**Source:** `whifun_functions/barplot_with_errorbars.m:129`
+
+## Signature
 
 ```matlab
 function [mean_,std_] = get_mean_std(data,nanflag,s)

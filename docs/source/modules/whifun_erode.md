@@ -1,6 +1,8 @@
 # whifun_erode
 
-Source: `whifun_functions/whifun_erode.m:1`
+**Source:** `whifun_functions/whifun_erode.m:1`
+
+## Signature
 
 ```matlab
 function out_mask_path = whifun_erode(path_,num_erosions,out_pre)

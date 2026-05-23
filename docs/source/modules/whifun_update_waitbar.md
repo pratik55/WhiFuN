@@ -1,6 +1,8 @@
 # whifun_update_waitbar
 
-Source: `whifun_functions/whifun_update_waitbar.m:2`
+**Source:** `whifun_functions/whifun_update_waitbar.m:2`
+
+## Signature
 
 ```matlab
 function whifun_update_waitbar(hWaitbar, numIterations)

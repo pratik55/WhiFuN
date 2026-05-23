@@ -1,6 +1,8 @@
 # displayImages
 
-Source: `whifun_functions/whifun_qc_viewer_seed_corr.m:31`
+**Source:** `whifun_functions/whifun_qc_viewer_seed_corr.m:31`
+
+## Signature
 
 ```matlab
 function displayImages

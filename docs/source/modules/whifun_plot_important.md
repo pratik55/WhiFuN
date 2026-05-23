@@ -1,6 +1,8 @@
 # whifun_plot_important
 
-Source: `whifun_functions/whifun_plot_important.m:1`
+**Source:** `whifun_functions/whifun_plot_important.m:1`
+
+## Signature
 
 ```matlab
 function important_table = whifun_plot_important(dataset_path, important_endings)

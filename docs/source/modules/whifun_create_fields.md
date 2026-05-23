@@ -1,44 +1,52 @@
 # whifun_create_fields
 
-Source: `whifun_functions/whifun_create_fields.m:1`
+**Source:** `whifun_functions/whifun_create_fields.m:1`
+
+## Signature
 
 ```matlab
 function Subj_list_all = whifun_create_fields(Subj_list_all)
 ```
 
-## MATLAB Help
+## Summary
 
 WHIFUN_CREATE_FIELDS Adds a set of standard fields to a subject list structure array.
 
-  Subj_list_all = WHIFUN_CREATE_FIELDS(Subj_list_all) is a utility function
-  that ensures a subject list structure array contains all the necessary
-  fields required for a neuroimaging preprocessing workflow.
+## Description
 
-  This function calls an internal helper function `create_field` for
-  a predefined list of fields. If a field does not exist in the structure,
-  it is added to the first element of the array with an empty value. This
-  pre-allocation is a robust way to prepare a subject list for subsequent
-  data storage without throwing errors.
+that ensures a subject list structure array contains all the necessary fields required for a neuroimaging preprocessing workflow.
 
-  The fields added by this function include:
-  - **Exclusion flags**: `error`, `motion_ex`, `manual_ex`
-  - **Functional data dimensions**: `x_func`, `y_func`, `z_func`, `nt` (number of time points), `TR`
-  - **Anatomical data dimensions**: `x_Anat`, `y_Anat`, `z_Anat`
-  - **Timing**: `time_preprocess_min`
+This function calls an internal helper function `create_field` for a predefined list of fields. If a field does not exist in the structure, it is added to the first element of the array with an empty value. This pre-allocation is a robust way to prepare a subject list for subsequent data storage without throwing errors.
 
-  Input Arguments:
-  Subj_list_all - A structure array containing subject data.
+The fields added by this function include:
 
-  Output Arguments:
-  Subj_list_all - The same structure array, with any missing fields from
-                  the predefined list added.
+- **Exclusion flags**: `error`, `motion_ex`, `manual_ex`
+- **Functional data dimensions**: `x_func`, `y_func`, `z_func`, `nt` (number of time points), `TR`
+- **Anatomical data dimensions**: `x_Anat`, `y_Anat`, `z_Anat`
+- **Timing**: `time_preprocess_min`
 
-  Example:
-     % Assuming a subject list `Subj_list` is created with only `name` and `age` fields.
-     % Subj_list = struct('name', {'sub-01', 'sub-02'}, 'age', {25, 30});
+## Input Arguments
 
-     % This function will add all the specified fields to the structure.
-     % Subj_list = whifun_create_fields(Subj_list);
+### `Subj_list_all`
+A structure array containing subject data.
 
-  Author: Pratik Jain
-  See also ISFIELD.
+## Output Arguments
+
+### `Subj_list_all`
+The same structure array, with any missing fields from the predefined list added.
+
+## Examples
+
+Example: % Assuming a subject list `Subj_list` is created with only `name` and `age` fields. % Subj_list = struct('name', {'sub-01', 'sub-02'}, 'age', {25, 30});
+
+% This function will add all the specified fields to the structure. % Subj_list = whifun_create_fields(Subj_list);
+
+See also ISFIELD.
+
+```matlab
+Subj_list_all = WHIFUN_CREATE_FIELDS(Subj_list_all) is a utility function
+```
+
+## Author
+
+Author: Pratik Jain

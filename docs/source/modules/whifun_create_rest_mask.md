@@ -1,36 +1,45 @@
 # whifun_create_rest_mask
 
-Source: `whifun_functions/whifun_create_rest_mask.m:1`
+**Source:** `whifun_functions/whifun_create_rest_mask.m:1`
+
+## Signature
 
 ```matlab
 function [REST_MASK1,func_mask_path] = whifun_create_rest_mask(in_func_path,in_anat_mask_subj_space_path)
 ```
 
-## MATLAB Help
+## Summary
 
 WHIFUN_CREATE_REST_MASK Creates a brain mask in functional space.
 
-  [REST_MASK1, func_mask_path] = WHIFUN_CREATE_REST_MASK(in_func_path, in_anat_mask_subj_space_path)
-  creates a brain mask for a functional image based on a pre-existing
-  anatomical brain mask. This is a crucial step for subsequent analysis
-  that needs to be restricted to brain tissue.
+## Syntax
 
-  The function uses `reslice_data` (an assumed helper function, as it is
-  not a standard MATLAB function) to resample the anatomical mask into the
-  functional image's space. Reslicing ensures that the mask has the same
-  dimensions and voxel-to-world mapping as the functional data, allowing
-  for direct application.
+```matlab
+[REST_MASK1, func_mask_path] = WHIFUN_CREATE_REST_MASK(in_func_path, in_anat_mask_subj_space_path)
+```
 
-  Input Arguments:
-  in_func_path                 - The path to the functional NIfTI file. This
-                                 file's dimensions and transformations are used
-                                 as a template for the new mask.
-  in_anat_mask_subj_space_path - The path to the brain mask created from the
-                                 anatomical image in the subject's native space.
+## Description
 
-  Output Arguments:
-  REST_MASK1       - A `dir` structure pointing to the newly created mask file.
-  func_mask_path   - The full path to the created mask file.
+creates a brain mask for a functional image based on a pre-existing anatomical brain mask. This is a crucial step for subsequent analysis that needs to be restricted to brain tissue.
 
-  Author: Pratik Jain
-  See also RESLICE_DATA, DIR, FULLFILE.
+The function uses `reslice_data` (an assumed helper function, as it is not a standard MATLAB function) to resample the anatomical mask into the functional image's space. Reslicing ensures that the mask has the same dimensions and voxel-to-world mapping as the functional data, allowing for direct application.
+
+## Input Arguments
+
+### `in_func_path`
+The path to the functional NIfTI file. This file's dimensions and transformations are used as a template for the new mask.
+
+### `in_anat_mask_subj_space_path`
+The path to the brain mask created from the anatomical image in the subject's native space.
+
+## Output Arguments
+
+### `REST_MASK1`
+A `dir` structure pointing to the newly created mask file.
+
+### `func_mask_path`
+The full path to the created mask file. See also RESLICE_DATA, DIR, FULLFILE.
+
+## Author
+
+Author: Pratik Jain

@@ -1,6 +1,8 @@
 # fdr_bh
 
-Source: `whifun_functions/fdr_bh.m:131`
+**Source:** `whifun_functions/fdr_bh.m:131`
+
+## Signature
 
 ```matlab
 function [h, crit_p, adj_ci_cvrg, adj_p]=fdr_bh(pvals,q,method,report)

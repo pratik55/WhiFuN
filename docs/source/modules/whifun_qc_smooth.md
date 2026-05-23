@@ -1,6 +1,8 @@
 # whifun_qc_smooth
 
-Source: `whifun_functions/whifun_qc_smooth.m:1`
+**Source:** `whifun_functions/whifun_qc_smooth.m:1`
+
+## Signature
 
 ```matlab
 function whifun_qc_smooth(out_folder,func_image,name,slover_slices_ss,slover_contour_range_ss,slover_view,over_write)

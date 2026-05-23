@@ -1,35 +1,37 @@
 # whifun_dir
 
-Source: `whifun_functions/whifun_dir.m:1`
+**Source:** `whifun_functions/whifun_dir.m:1`
+
+## Signature
 
 ```matlab
 function out = whifun_dir(path_)
 ```
 
-## MATLAB Help
+## Summary
 
 WHIFUN_DIR Safely retrieves directory information.
 
-  This function wraps the standard MATLAB dir command in a 
-  try-catch block. It is particularly useful for robustly 
-  handling missing directories or path-string errors without 
-  interrupting the execution of a larger preprocessing loop.
+## Description
 
-  INPUTS:
-      path_ - String or Character array. The path or file pattern 
-              to be listed (e.g., '/data/sub-*/func/').
+This function wraps the standard MATLAB dir command in a try-catch block. It is particularly useful for robustly handling missing directories or path-string errors without interrupting the execution of a larger preprocessing loop.
 
-  OUTPUTS:
-      out   - A structure array containing directory information.
-              Returns an empty array [] if the path is invalid or 
-              an error occurs.
+## Input Arguments
 
-  EXAMPLE:
-      % Safely check for the presence of a specific session
-      contents = whifun_dir(fullfile(subj_dir, 'ses-02'));
-      if isempty(contents)
-          fprintf('Session 02 not found for this subject.\n');
-      end
+### `path_`
+String or Character array. The path or file pattern to be listed (e.g., '/data/sub-*/func/').
 
-  See also DIR, WHIFUN_COMPLETE_FILEPATH, WHIFUN_DELETE.
-  Author: Pratik Jain
+## Output Arguments
+
+### `out`
+A structure array containing directory information. Returns an empty array [] if the path is invalid or an error occurs.
+
+## Examples
+
+EXAMPLE: % Safely check for the presence of a specific session contents = whifun_dir(fullfile(subj_dir, 'ses-02')); if isempty(contents) fprintf('Session 02 not found for this subject.\n'); end
+
+See also DIR, WHIFUN_COMPLETE_FILEPATH, WHIFUN_DELETE.
+
+## Author
+
+Author: Pratik Jain

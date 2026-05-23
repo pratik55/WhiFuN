@@ -1,6 +1,8 @@
 # idiff
 
-Source: `whifun_functions/idiff.m:1`
+**Source:** `whifun_functions/idiff.m:1`
+
+## Signature
 
 ```matlab
 function [idiff_score,A,Iself,Iothers] = idiff(vec1,vec2,fig_op,pca_op)

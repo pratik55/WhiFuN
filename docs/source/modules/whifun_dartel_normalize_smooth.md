@@ -1,6 +1,8 @@
 # whifun_dartel_normalize_smooth
 
-Source: `whifun_functions/whifun_dartel_normalize_smooth.m:18`
+**Source:** `whifun_functions/whifun_dartel_normalize_smooth.m:18`
+
+## Signature
 
 ```matlab
 function output = whifun_dartel_normalize_smooth(Subj_list,func_anat,Smooth_pre,f_pre,Reg_pre,Realign_pre,Cut_pre,skull_pre,output_folder,vox)

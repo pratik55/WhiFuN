@@ -1,6 +1,8 @@
 # whifun_make_unique
 
-Source: `whifun_functions/whifun_make_unique.m:1`
+**Source:** `whifun_functions/whifun_make_unique.m:1`
+
+## Signature
 
 ```matlab
 function B = whifun_make_unique(A)
