@@ -44,12 +44,13 @@
 >
 > Example Data format 1:
 >
-├── src \
-│   ├── main.js \
-│   └── styles.css \
-├── public \
-│   └── index.html \
-└── package.json \
+.
+└── SE000001
+    ├── MR000000
+    ├── MR000001
+    ├── MR000002
+    └── MR000003
+
 >
 > practice_nyu_abide Participants Data folder
 >
