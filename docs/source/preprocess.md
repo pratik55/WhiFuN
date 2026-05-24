@@ -9,7 +9,7 @@ WhiFuN uses a combination of inhouse MATLAB scripts and SPM toolbox to preproces
 </colgroup>
 <thead>
 <tr>
-<th><p><img src="_static/manual_media/image21.png" style="width:6.35003in;height:2.23611in" /></p>
+<th><p><img src="_static/manual_media/image21.png" /></p>
 <p>Figure 4‑1: WhiFuN Preprocessing Pipeline.</p></th>
 </tr>
 </thead>
@@ -22,7 +22,7 @@ WhiFuN uses a combination of inhouse MATLAB scripts and SPM toolbox to preproces
 </colgroup>
 <thead>
 <tr>
-<th><p><img src="_static/manual_media/image22.png" style="width:6.23626in;height:1.54537in" /></p>
+<th><p><img src="_static/manual_media/image22.png"/></p>
 <p>Figure 4‑2: WhiFuN Preprocessing GUI</p></th>
 </tr>
 </thead>
@@ -163,7 +163,7 @@ In the following sections we will go through the preprocessing pipeline in detai
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><p><img src="_static/manual_media/image24.png" style="width:2.44598in;height:0.75567in" /></p>
+<th style="text-align: center;"><p><img src="_static/manual_media/image24.png" /></p>
 <p>Figure 4‑4: Options for Nuisance regression.</p></th>
 </tr>
 </thead>
@@ -181,7 +181,7 @@ In the following sections we will go through the preprocessing pipeline in detai
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><p><img src="_static/manual_media/image25.png" style="width:0.88487in;height:0.91805in" /></p>
+<th style="text-align: center;"><p><img src="_static/manual_media/image25.png" /></p>
 <p>Figure 4‑5: Number of PCA components to regress.</p></th>
 </tr>
 </thead>
@@ -204,7 +204,7 @@ In the following sections we will go through the preprocessing pipeline in detai
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><p><img src="_static/manual_media/image26.png" style="width:2.09636in;height:0.23601in" /></p>
+<th style="text-align: center;"><p><img src="_static/manual_media/image26.png" /></p>
 <p>Figure 4‑6: Filter frequency range</p></th>
 </tr>
 </thead>
@@ -227,7 +227,7 @@ In the following sections we will go through the preprocessing pipeline in detai
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><p><img src="_static/manual_media/image27.png" style="width:1.92216in;height:0.70598in" /></p>
+<th style="text-align: center;"><p><img src="_static/manual_media/image27.png"  /></p>
 <p>Figure 4‑7: Options for Smoothing</p></th>
 </tr>
 </thead>
@@ -252,7 +252,7 @@ In the following sections we will go through the preprocessing pipeline in detai
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><p><img src="_static/manual_media/image28.png" style="width:2.03493in;height:0.27916in" /></p>
+<th style="text-align: center;"><p><img src="_static/manual_media/image28.png"  /></p>
 <p>Figure 4‑8: Normalization voxel dimensions.</p></th>
 </tr>
 </thead>
