@@ -20,7 +20,7 @@
 </colgroup>
 <thead>
 <tr>
-<th><img src="_static/manual_media/image18.png" style="width:2.96088in;height:1.11104in" alt="A screenshot of a computer Description automatically generated" />
+<th><img src="_static/manual_media/image18.png" />
 <p>Figure 3‑1: Q1a_scanning_parameters.jpg saved when the practice data set was used. The x axis denotes the subjects. A: Number of fMRI images/volumes B: TR C: Voxel size of fMRI images D: Voxel sizes of structural images, across all subjects.</p></th>
 </tr>
 </thead>
