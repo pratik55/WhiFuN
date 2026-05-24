@@ -40,7 +40,7 @@ In the following sections we will go through the preprocessing pipeline in detai
 
 > The preprocessing pipeline starts by *‘gun zipping’* any *.gz* file and discarding initial volumes (default is 10) from the functional images, allowing for the magnetization to stabilize to a steady state (Caballero-Gaudes & Reynolds, 2017).
 >
-> No. of Volumes to Discard 🡪 Expects positive integer values including 0.
+> No. of Volumes to Discard --> Expects positive integer values including 0.
 >
 > If the user specifies 0, No initial volumes will be discarded.
 >
@@ -61,7 +61,7 @@ In the following sections we will go through the preprocessing pipeline in detai
 
 1)  r\<cut functional image name\>.nii :- Realigned image generated after discarding the initial volumes.
 
-2)  Rp\_\<cut functional image name\>.mat :- Motion parameters namely the translations of each volume in x, y, and z directions in millimeters and the rotations of each volume in pitch, roll, and yaw in radians in a text file.
+2)  rp\_\<cut functional image name\>.mat :- Motion parameters namely the translations of each volume in x, y, and z directions in millimeters and the rotations of each volume in pitch, roll, and yaw in radians in a text file.
 
 3)  mean\<cut functional image name\>.nii :- Mean functional image is a 3D image with every voxel representing the mean value of the BOLD timeseries.
 
