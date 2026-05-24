@@ -38,10 +38,7 @@
 </colgroup>
 <thead>
 <tr>
-<th><p><strong>D</strong></p>
-<p><strong>C</strong></p>
-<p><strong>A</strong></p>
-<p><strong>B</strong></p>
+<th><img src="_static/manual_media/image19.png" />
 <p>Figure 3‑2: Q1a_scanning_parameters_histogram.jpg saved when the practice data set was used. Histogram of A: the number of timepoints/volumes/images in the fMRI image. B: TR C: Voxel sizes of fMRI images D: Voxel sizes of structural images.</p></th>
 </tr>
 </thead>
