@@ -38,45 +38,38 @@
 
 2.  The anatomical and the functional folder should be in the same folder.
 
-> WhiFuN won’t be able to process any dataset that deviates from the above-mentioned format.
+> WhiFuN won’t be able to process any dataset that deviates from the above-mentioned format wintin the GUI. However with Script it is possible.
 >
 > We explain how the deviations from BIDS can be handled by WhiFuN using an example of practice [ABIDE](https://fcon_1000.projects.nitrc.org/indi/abide/) dataset that can be downloaded from [here](https://drive.google.com/drive/folders/1l7dhG8dYYRCW5EWhkPZbBpA7TOau1W-B). It has the following folder structure
 >
-> Example Data format 1:
->
-> practice_nyu_abide Participants Data folder
->
-> 0050952 Specific Participant’s Folder
->
-> session_1 Intermediate folder
->
-> anat_1 Anatomical folder
->
-> rest_1 Functional folder
->
-> 0050953
->
-> session_1
->
-> anat_1
->
-> rest_1
->
-> 0050954
->
-> session_1
->
-> anat_1
->
-> rest_1
-
-0050955
-
-> session_1
->
-> anat_1
->
-> rest_1
+## Example Data format 1:
+```md
+├── practice_NYU_abide                  (Participants Data folder)
+│   ├── 0050952                         (Specific Participant’s Folder)
+│   │   └── session_1                   (Intermediate folder)
+│   │       ├── anat_1                  (Anatomical folder)
+│   │       │   └── mprage.nii.gz    
+│   │       └── rest_1                  (Functional folder)
+│   │           └── rest.nii.gz
+│   ├── 0050953
+│   │   └── session_1
+│   │       ├── anat_1
+│   │       │   └── mprage.nii.gz
+│   │       └── rest_1
+│   │           └── rest.nii.gz
+│   ├── 0050954
+│   │   └── session_1
+│   │       ├── anat_1
+│   │       │   └── mprage.nii.gz
+│   │       └── rest_1
+│   │           └── rest.nii.gz
+│   └── 0050955
+│       └── session_1
+│           ├── anat_1
+│           │   └── mprage.nii.gz
+│           └── rest_1
+│               └── rest.nii.gz
+```
 >
 > **Fields of *Participants Data Folder Details***
 >
@@ -92,34 +85,27 @@
 >
 > For example, if the data has the following structure
 >
-> Example Data format 2
->
-> Practice_nyu_abide
->
-> 0050952
->
-> MRI
->
-> 3T
->
-> session_1
->
-> anat_1
->
-> func_1
->
-> 0050953
->
-> MRI
->
-> 3T
->
-> session_1
->
-> anat_1
->
-> func_1
->
+## Example Data format 2
+
+```md
+├── practice_NYU_abide
+│   ├── 0050952
+│   │   └── 3T
+│   │       └── MRI
+│   │           └── session_1
+│   │               ├── anat_1
+│   │               │   └── mprage.nii.gz
+│   │               └── rest_1
+│   │                   └── rest.nii.gz
+│   ├── 0050953
+│   │   └── 3T
+│   │       └── MRI
+│   │           └── session_1
+│   │               ├── anat_1
+│   │               │   └── mprage.nii.gz
+│   │               └── rest_1
+│   │                   └── rest.nii.gz
+```
 > For example, data format 2 the Intermediate folders field should be
 >
 > Intermediate folders: - MRI/3T/session_1 (for windows)

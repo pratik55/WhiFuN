@@ -1,5 +1,5 @@
-WhiFuN Manual
-=============
+WhiFuN
+======
 
 .. image:: _static/manual_media/image1.png
    :alt: WhiFuN logo
