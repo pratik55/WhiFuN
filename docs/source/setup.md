@@ -71,40 +71,6 @@
 │               └── rest.nii.gz
 ```
 >
-> practice_nyu_abide Participants Data folder
->
-> 0050952 Specific Participant’s Folder
->
-> session_1 Intermediate folder
->
-> anat_1 Anatomical folder
->
-> rest_1 Functional folder
->
-> 0050953
->
-> session_1
->
-> anat_1
->
-> rest_1
->
-> 0050954
->
-> session_1
->
-> anat_1
->
-> rest_1
-
-0050955
-
-> session_1
->
-> anat_1
->
-> rest_1
->
 > **Fields of *Participants Data Folder Details***
 >
 > **Intermediate folders:** If there are folders between the *participant* folder and the folder containing the anatomical and functional images then those should be specified here.
@@ -119,34 +85,28 @@
 >
 > For example, if the data has the following structure
 >
-> Example Data format 2
->
-> Practice_nyu_abide
->
-> 0050952
->
-> MRI
->
-> 3T
->
-> session_1
->
-> anat_1
->
-> func_1
->
-> 0050953
->
-> MRI
->
-> 3T
->
-> session_1
->
-> anat_1
->
-> func_1
->
+## Example Data format 2
+
+```md
+├── gpt_spm_preproc.m
+├── practice_NYU_abide
+│   ├── 0050952
+│   │   └── 3T
+│   │       └── MRI
+│   │           └── session_1
+│   │               ├── anat_1
+│   │               │   └── mprage.nii.gz
+│   │               └── rest_1
+│   │                   └── rest.nii.gz
+│   ├── 0050953
+│   │   └── 3T
+│   │       └── MRI
+│   │           └── session_1
+│   │               ├── anat_1
+│   │               │   └── mprage.nii.gz
+│   │               └── rest_1
+│   │                   └── rest.nii.gz
+```
 > For example, data format 2 the Intermediate folders field should be
 >
 > Intermediate folders: - MRI/3T/session_1 (for windows)
