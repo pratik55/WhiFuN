@@ -63,7 +63,7 @@
 </colgroup>
 <thead>
 <tr>
-<th><p><img src="_static/manual_media/image20.png" style="width:5.97253in;height:1.54009in" /></p>
+<th><p><img src="_static/manual_media/image20.png"/></p>
 <p>Figure 3‑3: Participant Information extracted from Data check.</p></th>
 </tr>
 </thead>
