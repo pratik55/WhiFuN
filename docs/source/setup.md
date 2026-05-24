@@ -88,7 +88,6 @@
 ## Example Data format 2
 
 ```md
-├── gpt_spm_preproc.m
 ├── practice_NYU_abide
 │   ├── 0050952
 │   │   └── 3T
