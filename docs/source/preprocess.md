@@ -77,7 +77,7 @@ In the following sections we will go through the preprocessing pipeline in detai
 >
 > Outlier volumes are identified and corresponding scans are excluded if the maximum FD is greater than a threshold (default is 5mm), if the overall mean FD is greater than a threshold (default 0.2 mm), or if more than 20% of volumes are greater than a threshold (default 0.2 mm) (Parkes et al., 2018).
 >
-> Once the preprocessing is completed for all subjects, based on the distribution of the FD values WhiFuN allows the user to set the above-mentioned thresholds based on how much motion can be tolerated for a particular cohort (See Section <span class="mark"></span>6.2).
+> Once the preprocessing is completed for all subjects, based on the distribution of the FD values WhiFuN allows the user to set the above-mentioned thresholds based on how much motion can be tolerated for a particular cohort (See Section <span class="mark"></span>6.2 [Setup](preprocessing_tools.md#preprocessing_tools)).
 
 <a id="segmentation-co-registration-and-mask-extractions"></a>
 ## Segmentation, Co-registration and Mask Extractions
