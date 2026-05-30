@@ -6,8 +6,8 @@ project = "WhiFuN"
 copyright = "2025, Jain et. al"
 author = "Pratik Jain"
 
-release = "3.2"
-version = "3.2.0"
+release = "3.3"
+version = "3.3.1"
 
 # -- General configuration
 
