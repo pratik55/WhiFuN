@@ -16,4 +16,4 @@ Project links
 
 - GitHub repository: https://github.com/Brain-Connectivity-Lab/WhiFuN
 - Paper (Jain et al., 2025): https://doi.org/10.1162/IMAG.a.3
-- Read the Docs documentation URL: https://<your-project-slug>.readthedocs.io/
+- Read the Docs documentation URL: https://whifun.readthedocs.io/en/latest/index.html
