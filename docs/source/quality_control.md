@@ -157,8 +157,24 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 ## Effects of Smoothing
 
 > If Smoothing button is clicked, the smoothing image saved at h_Smoothing folder will be shown.
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="_static/manual_media/image56.svg" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><blockquote>
+<p>Figure 5‑14: Figure 5‑13: GM-WM smooth separately QC image .</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
-Figure 5‑13: GM-WM smooth separately QC image
 
 > One may observe that when the GM and WM voxels are smoothed separately, the cortex gets a number of small holes as these voxels were neither identified as GM nor WM. The accuracy of segmentation depends on the resolution of the anatomical and the func images. If the user observes many holes in the cortex, the participant data may have to be discarded. Again, these plots are recommended to be a reference to back trace the preprocessing error if found and is not recommended to check for every participant.
 
