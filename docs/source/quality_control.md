@@ -11,11 +11,19 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 ## Initial Check
 
 > The raw anatomical and functional images are stored in the a_Initial_check folder with the image contours on the standard MNI reference template for every subject. The user must check the initial position and orientation of the images with that of the MNI space. If the anatomical image is far from the MNI template or orientated differently, then the user must reorient the image manually to the template direction and reset the origin to the anterior commissure (Di & Biswal, 2023).
-
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
 <tr>
 <th><p><img src="_static/manual_media/image35.svg" style="width:6.39477in;height:3.25831in" /></p>
 <p>Figure 5‑2: Initial Check Quality Control. The raw anatomical and functional image and their contours plotted on the standard MNI template</p></th>
 </tr>
+</thead>
+<tbody>
+</tbody>
+</table>
 
 <a id="head-motion"></a>
 ## Head Motion
