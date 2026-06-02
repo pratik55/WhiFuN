@@ -3,7 +3,7 @@
 
 Once the preprocessing is complete, the user is recommended to use the QC viewer to check the quality control plots generated after most preprocessing steps. After preprocessing is completed the *QC viewer* button will open the interactive QC viewer. The quality control plots that are saved in \<Output_folder_path\>/Quality_Control are accessed here.
 
-| <img src="_static/manual_media/image31.svg" style="width:6.40098in;height:5.0388in" /> |
+| <img src="_static/manual_media/image31.svg" /> |
 |:--:|
 | Figure 5‑1: Interactive QC viewer that makes viewing the QC plots very easy and participants can be accepted or rejected within the QC viewer GUI and appropriate comments can be saved. |
 
