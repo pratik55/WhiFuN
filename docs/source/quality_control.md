@@ -18,7 +18,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 <thead>
 <tr>
 <th><p><img src="_static/manual_media/image33.svg" style="width:6.39477in;height:3.25831in" /></p>
-<p>Figure 5‑2: Initial Check Quality Control. The raw anatomical and functional image and their contours plotted on the standard MNI template</p></th>
+<p>Figure 5‑2: Initial Check Quality Control. The raw anatomical image and its contours plotted on the standard MNI template </p></th>
 </tr>
 </thead>
 <tbody>
