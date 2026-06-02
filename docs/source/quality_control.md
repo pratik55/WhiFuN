@@ -163,7 +163,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><img src="_static/manual_media/image56.svg" /></th>
+<th style="text-align: center;"><img src="_static/manual_media/image54.svg" /></th>
 </tr>
 </thead>
 <tbody>
