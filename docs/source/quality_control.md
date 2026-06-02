@@ -17,7 +17,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 </colgroup>
 <thead>
 <tr>
-<th><p><img src="_static/manual_media/image33.svg" style="width:6.39477in;height:3.25831in" /></p>
+<th><p><img src="_static/manual_media/image33.svg" /></p>
 <p>Figure 5‑2: Initial Check Quality Control. The raw anatomical image and its contours plotted on the standard MNI template </p></th>
 </tr>
 </thead>
@@ -36,7 +36,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 </colgroup>
 <thead>
 <tr>
-<th><p><img src="_static/manual_media/image35.svg" style="width:6.39477in;height:3.25831in" /></p>
+<th><p><img src="_static/manual_media/image35.svg" /></p>
 <p>Figure 5‑3: Head motion quality control plot.</p></th>
 </tr>
 </thead>
@@ -69,7 +69,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 >
 > Figure 5‑5 shows the participants data that might be rejected. For this participant, there is CSF between the skull and the brain which can be due to bad brain extraction. In these cases, the registration to MNI space also includes the CSF, which makes the brain of this participant smaller than that of the MNI space leading to misalignment (See Section 5.8 for more details).
 
-| <img src="_static/manual_media/image39.svg" style="width:5.89943in;height:3.53417in" /> |
+| <img src="_static/manual_media/image39.svg" /> |
 |:--:|
 | Figure 5‑5: Segmentation for a participant whose data may be rejected. |
 
@@ -84,7 +84,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 >
 > Figure 5‑7 shows the co-registration for the participant that had CSF in between the skull and the brain. It can be observed that brain extraction was not good for this participant. For this participant’s data thus the images are not aligned, the user may reject the data for this participant.
 
-| <img src="_static/manual_media/image43.svg" style="width:5.79703in;height:3.44378in" /> |
+| <img src="_static/manual_media/image43.svg"  /> |
 |:--:|
 | Figure 5‑7: Co-registration plot that maybe rejected. |
 
@@ -107,7 +107,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 
 > The global (average) signal before and after regression of the motion parameters and the CSF signals is plotted. The user may observe that any upward or downward trends and artifacts due to motion are removed after regression.
 
-| <img src="_static/manual_media/image47.svg" style="width:5.97024in;height:3.04575in" /> |
+| <img src="_static/manual_media/image47.svg" /> |
 |:--:|
 | Figure 5‑9 Regression Global Quality Control plot |
 
@@ -118,7 +118,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 >
 > The vox plot plots all the Framewise displacement and voxel time series before regression together. The time series belonging to the GM is plotted first, the superficial WM (WM close to GM) is plotted next, the deep WM is plotted after that and finally the time series corresponding to CSF is plotted as recommended by (Power et al., 2014).
 
-| <img src="_static/manual_media/image49.svg" style="width:5.69403in;height:3.38259in" /> |
+| <img src="_static/manual_media/image49.svg" /> |
 |:--:|
 | Figure 5‑10: Vox plot before regression |
 
@@ -126,7 +126,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 >
 > The vox plot after regression is plotted below (Figure 5‑11). It can be seen using the drop down in the QC_viewer GUI. It can be seen that the vertical stripes seen in Figure 5‑10 are no longer visible. This shows that the regression worked well.
 
-| <img src="_static/manual_media/image50.png" style="width:5.68629in;height:3.38109in" /> |
+| <img src="_static/manual_media/image50.png"  /> |
 |:--:|
 | Figure 5‑11: Vox plot after regression |
 
@@ -142,7 +142,7 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 <thead>
 <tr>
 <th style="text-align: center;"><blockquote>
-<p><img src="_static/manual_media/image52.svg" style="width:5.5396in;height:3.29085in" /></p>
+<p><img src="_static/manual_media/image52.svg" /></p>
 </blockquote></th>
 </tr>
 </thead>
@@ -176,7 +176,7 @@ Figure 5‑13: GM-WM smooth separately QC image
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><img src="_static/manual_media/image56.svg" style="width:5.90144in;height:3.51237in" /></th>
+<th style="text-align: center;"><img src="_static/manual_media/image56.svg" /></th>
 </tr>
 </thead>
 <tbody>
@@ -196,7 +196,7 @@ Figure 5‑13: GM-WM smooth separately QC image
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><img src="_static/manual_media/image58.svg" style="width:5.95375in;height:3.54351in" /></th>
+<th style="text-align: center;"><img src="_static/manual_media/image58.svg" /></th>
 </tr>
 </thead>
 <tbody>
@@ -220,7 +220,7 @@ Figure 5‑13: GM-WM smooth separately QC image
 <thead>
 <tr>
 <th style="text-align: center;"><blockquote>
-<p><img src="_static/manual_media/image60.svg" style="width:5.86667in;height:3.48515in" /></p>
+<p><img src="_static/manual_media/image60.svg" /></p>
 </blockquote></th>
 </tr>
 </thead>
@@ -238,7 +238,7 @@ Figure 5‑13: GM-WM smooth separately QC image
 <thead>
 <tr>
 <th style="text-align: center;"><blockquote>
-<p><img src="_static/manual_media/image62.svg" style="width:5.86634in;height:3.48495in" /></p>
+<p><img src="_static/manual_media/image62.svg"/></p>
 </blockquote></th>
 </tr>
 </thead>
@@ -266,29 +266,29 @@ Figure 5‑13: GM-WM smooth separately QC image
 >
 > For each of these maps the axial, coronal and sagittal views for different slices are saved as .png images in k_Seed_Based_Corr folder in the *quality_control* folder. For the QC check the user may directly click the *Seed based Corr* button and view the seed based plots.
 
-| <img src="_static/manual_media/image63.png" style="width:5.90474in;height:3.51099in" /> |
+| <img src="_static/manual_media/image63.png" /> |
 |:--:|
 | Figure 5‑18: Default mode Network Seed based Correlation QC map. |
 
 > It is recommended that the user look at these maps for every participant. To watch all the seed-based plots along with the vox plot, the split button can be used (See Figure 5‑19).
 
-| <img src="_static/manual_media/image65.svg" style="width:5.67822in;height:3.3732in" /> |
+| <img src="_static/manual_media/image65.svg" /> |
 |:--:|
 | Figure 5‑19: Split view in Seed Based Corr plots. |
 
 > The users are recommended to check for any seed plots that are correlated to every voxel in the brain or have some artifact correlation patterns. Figure 5‑19, Figure 5‑20 are expected seed-based correlation and vox plots.
 
-| <img src="_static/manual_media/image66.png" style="width:5.68317in;height:3.37772in" /> |
+| <img src="_static/manual_media/image66.png" /> |
 |:--:|
 | Figure 5‑20: An expected seed-based correlation and vox plot. |
 
 > Figure 5‑21and Figure 5‑22 shows a participant data with artifacts. In Figure 5‑21 a weird strip like pattern can be seen in the default mode network seed correlation plot and in Figure 5‑22, every voxel seems to be correlated with every other voxel. Data corresponding to these participants is recommended to be excluded from further analysis.
 
-| <img src="_static/manual_media/image67.png" style="width:5.67909in;height:3.37505in" /> |
+| <img src="_static/manual_media/image67.png" /> |
 |:--:|
 | Figure 5‑21: Participant data with artifacts, default mode network pattern looks very weird. |
 
-| <img src="_static/manual_media/image68.png" style="width:5.69368in;height:3.38372in" /> |
+| <img src="_static/manual_media/image68.png"/> |
 |:--:|
 | Figure 5‑22: The seed-based correlation plots have almost every voxel correlated. |
 
