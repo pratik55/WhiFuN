@@ -313,6 +313,8 @@ Once the preprocessing is complete, the user is recommended to use the QC viewer
 
 > The user can observe the associations between the global and noisy signals at this step. WhiFuN plots the raw unprocessed global signal, the six rigid motion parameters computed during realignment, the CSF signals, the global mean of the preprocessed image, and the correlation of all the above-mentioned signals. WhiFuN also plots pairwise variance between consecutive volumes (similar to DVARS (Power et al., 2014)) for the unprocessed image, the framewise displacement, the derivate of CSF signals, the pairwise variance between consecutive volumes for the preprocessed image and the correlation of these signals. The user must check the correlation plots and observe if the preprocessed global signal is correlated to the noisy signals. If the correlation of the global signal corresponding to the final preprocessed signal with any of the noisy signals is significant, the user may exclude the subject.
 
-Figure 5‑23 **:** Timeseries plot showing the global time series before preprocessing, the 6 motion parameters, the mean CSF time series, the global mean signal after preprocessing and a correlation matrix correlating these signals. The same is repeated for pairwise variance across consecutive scans instead of the global mean in the 2<sup>nd</sup> row.
+| <img src="_static/manual_media/image69.svg"/> |
+|:--:|
+| Figure 5‑23 **:** Timeseries plot showing the global time series before preprocessing, the 6 motion parameters, the mean CSF time series, the global mean signal after preprocessing and a correlation matrix correlating these signals. The same is repeated for pairwise variance across consecutive scans instead of the global mean in the 2<sup>nd</sup> row. |
 
 It is recommended that the user examines all QC plots of all the preprocessing steps to remove participant data that has artifacts from further analysis.
