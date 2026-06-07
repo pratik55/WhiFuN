@@ -1,0 +1,100 @@
+```mermaid
+timeline
+    title Validated Timeline of White Matter Functional Analysis
+    2002 : Early task evidence
+         : Tettamanti et al. - Interhemispheric transmission of visuomotor information in humans: fMRI evidence
+    2009 : Biological plausibility and early WM BOLD detection
+         : Suarez-Sola et al. - Neurons in the white matter of the adult human neocortex
+         : Gawryluk et al. - Optimizing the detection of white matter fMRI using asymmetric spin echo spiral
+         : Yarkoni et al. - BOLD correlates of trial-by-trial reaction time variability in gray and white matter: a multi-study fMRI analysis
+    2011 : Corpus callosum functional mapping
+         : Gawryluk et al. - Functional mapping in the corpus callosum: a 4T fMRI study of white matter
+         : Fabri et al. - Topographical organization of human corpus callosum: an fMRI mapping study
+    2012 : Hemodynamic response work
+         : Fraser et al. - White versus gray matter: fMRI hemodynamic responses show similar characteristics, but differ in peak amplitude
+    2013 : Sensitivity and functional structure
+         : Mazerolle et al. - Sensitivity to white matter fMRI activation increases with field strength
+         : Ding et al. - Spatio-temporal correlation tensors reveal functional structure in human brain
+    2014 : Review and clinical task translation
+         : Gawryluk et al. - Does functional MRI detect activation in white matter? A review of emerging evidence, issues, and future directions
+         : Gawryluk et al. - Functional MRI activation in white matter during the Symbol Digit Modalities Test
+    2016 : Functional pathway visualization
+         : Ding et al. - Visualizing functional pathways in the human brain using correlation tensors and magnetic resonance imaging
+    2017 : Resting-state WM networks become central
+         : Peer et al. - Evidence for functional networks within the human brain's white matter
+         : Marussich et al. - Mapping white-matter functional organization at rest and during naturalistic visual perception
+    2018 : Conventional 3T and functional loading
+         : Courtemanche et al. - Detecting white matter activity using conventional 3 Tesla fMRI: an evaluation of standard field strength and hemodynamic response function
+         : Ding et al. - Detection of synchronous brain activity in white matter tracts at rest and under functional loading
+    2019 : Clinical expansion and methodological reframing
+         : Jiang et al. - White matter functional network connectivity is altered in benign childhood epilepsy with centrotemporal spikes
+         : Farago et al. - Alterations in cortical and white matter structure in migraine with aura
+         : Zhao et al. - Functional connectivity between white matter and gray matter based on fMRI for Alzheimer's disease classification
+         : Jiang et al. - White-matter functional networks changes in patients with schizophrenia
+         : Li et al. - Characterization of the hemodynamic response function in white matter tracts for event-related fMRI
+         : Schilling et al. - Functional tractography of white matter by high angular resolution functional-correlation imaging (HARFI)
+         : Grajauskas et al. - White matter fMRI activation cannot be treated as a nuisance regressor: overcoming a historical blind spot
+         : Gore et al. - Functional MRI and resting state connectivity in white matter - a mini-review
+    2020 : Network modeling, cognition, and clinical biomarkers
+         : Huang et al. - Detection of functional networks within white matter using independent component analysis
+         : Li et al. - Functional engagement of white matter in resting-state brain networks
+         : Wang et al. - The organization of the human corpus callosum estimated by intrinsic functional connectivity with white-matter functional networks
+         : Mishra et al. - Concomitant modulation of BOLD responses in white matter pathways and cortex
+         : Li et al. - Identification of white matter networks engaged in object (face) recognition showing differential responses to modulated stimulus strength
+         : Wang et al. - Hemodynamic response function in brain white matter in a resting state
+         : Li et al. - A neuromarker of individual general fluid intelligence from the white-matter functional connectome
+         : Gao et al. - Functional connectivity of white matter as a biomarker of cognitive decline in Alzheimer's disease
+         : Mazerolle et al. - Evidence of underreporting of white matter fMRI activation
+         : Lin et al. - Disrupted white matter functional connectivity in aMCI APOEepsilon4 carriers: a resting-state study
+    2021 : Psychiatric and developmental clinical applications
+         : Wang et al. - Structural and functional connectivity mapping of the human corpus callosum organization with white-matter functional networks
+         : Wang et al. - Abnormal white matter functional connectivity density in antipsychotic-naive adolescents with schizophrenia
+         : Chen et al. - Atypical functional covariance connectivity between gray and white matter in children with autism spectrum disorder
+         : Gao et al. - Lower functional connectivity of white matter during rest and working memory tasks is associated with cognitive impairments in schizophrenia
+         : Lu et al. - Altered white-matter functional networks in patients with conduct disorder
+    2022 : Reliability, temporal dynamics, and new detection methods
+         : Wang et al. - White matter functional connectivity in resting-state fMRI: robustness, reliability, and relationships to gray matter
+         : Guo et al. - Latency structure of BOLD signals within white matter in resting-state fMRI
+         : Schilling et al. - Anomalous and heterogeneous characteristics of the BOLD hemodynamic response function in white matter
+         : Zhao et al. - Detection of functional activity in brain white matter using fiber architecture informed synchrony mapping
+         : Bu et al. - Investigation of white matter functional networks underlying different behavioral profiles in attention-deficit/hyperactivity disorder
+         : Li et al. - Temporal lobe epilepsy disrupts white matter resting-state networks
+         : Li et al. - Increased functional connectivity of white-matter in myotonic dystrophy type 1
+         : Jiang et al. - Hippocampus-based static functional connectivity mapping within white matter in mild cognitive impairment
+    2023 : Large-scale aging, multimodal validation, and disease spread
+         : Huang et al. - Intracranial electrophysiological and structural basis of BOLD functional connectivity in human brain white matter
+         : Gao et al. - Automatic preprocessing pipeline for white matter functional analyses of large-scale databases
+         : Gao et al. - Functional alterations in bipartite network of white and grey matters during aging
+         : Li et al. - Changes in white matter functional networks across late adulthood
+         : Nozais et al. - Atlasing white matter and grey matter joint contributions to resting-state networks in the human brain
+         : Hu et al. - Characterizing the spatiotemporal features of functional connectivity across the white matter and gray matter during the naturalistic condition
+         : Jiang et al. - Functional connectivity of white matter and its association with sleep quality
+         : Sansone et al. - Patterns of gray and white matter functional networks involvement in glioblastoma patients: indirect mapping from clinical MRI scans
+         : Zhao et al. - Structure-function coupling in white matter uncovers the abnormal brain connectivity in schizophrenia
+    2024 : Development, preclinical AD, and broader WM-GM frameworks
+         : Eby et al. - Identification of functional white matter networks in BOLD fMRI
+         : Huang et al. - White matter functional networks in the developing brain
+         : Wang et al. - fMRI signals in white matter rewire gray matter community organization
+         : Ran et al. - Altered white-matter functional network in children with idiopathic generalized epilepsy
+         : Zhang et al. - Decoupling of gray and white matter functional networks in cognitive impairment induced by occupational aluminum exposure
+         : Xu et al. - Reductions in the white-gray functional connectome in preclinical Alzheimer's disease and their associations with amyloid and cognition
+         : Sengupta et al. - Characteristic BOLD signals are detectable in white matter of the spinal cord at rest and after a stimulus
+         : Li et al. - White matter-gray matter correlation analysis based on white matter functional gradient
+    2025 : Toolboxes, templates, gradients, and alternative contrasts
+         : Itkyal et al. - Evidence for white matter intrinsic connectivity networks at rest and during a task: a large-scale study and templates
+         : Jain et al. - WhiFuN: a toolbox to map the white matter functional networks of the human brain
+         : de Riedmatten et al. - Evaluating the dependence of ADC-fMRI on haemodynamics in breath-hold and resting-state conditions
+         : Fang et al. - Gray matter and white matter functional connectivity changes induced by rTMS concurrent with cognitive training in Alzheimer's disease
+         : Hu et al. - GWM-HFN, a gray-white matter heterogeneous fusion network for functional connectomes
+         : Xu et al. - White-matter BOLD mediates time-varying cortico-cortical functional connectivity
+         : Gore et al. - Functional MRI detection of blood-oxygenation-level-dependent responses in both white and gray matter of the spinal cord after optogenetic cortical stimulation
+    2026 : Mechanistic, developmental, and clinical consolidation
+         : Feng et al. - Developmental changes of the white matter functional connectome
+         : Itkyal et al. - Investigating white matter functional network connectivity across the Alzheimer's disease spectrum using resting-state fMRI
+         : Guo et al. - Abnormal signal transmission in white matter revealed by resting-state communication connectivity in Alzheimer's disease: a comprehensive cross-sectional and longitudinal study
+         : Mai et al. - Altered topological properties of white-matter functional networks in young smokers
+         : Fan et al. - Test-retest reliability and predictive validity of graph theoretical topological properties in white matter functional connectome
+         : Nelson et al. - The role of white matter myelin in structural-functional network coupling
+         : Huang et al. - Body weight-related alterations in white matter functional connectivity in children: an fMRI study
+         : Gore et al. - The nature and interpretation of BOLD signals in white matter - a review
+```
